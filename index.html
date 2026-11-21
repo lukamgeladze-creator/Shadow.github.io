@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08070c">
+  <meta name="description" content="ShadowEvil — the offensive security portfolio of Luka Mgeladze. Penetration testing, Active Directory, web exploitation, Python security tooling, and research.">
+  <meta property="og:title" content="ShadowEvil // Offensive Security">
+  <meta property="og:description" content="Luka Mgeladze — Offensive Security · Active Directory · Web · Systems · Tooling">
+  <meta property="og:type" content="website">
+  <meta name="color-scheme" content="dark">
+  <title>ShadowEvil // Offensive Security</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#about">Skip to content</a>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  <canvas id="embers" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="site-header">
+    <a class="logo" href="#top" aria-label="ShadowEvil, home"><span class="logo-glyph">影</span><span>SHADOW<span>EVIL</span><small> / OFFSEC</small></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#about">IDENTITY</a><a href="#expertise">ARSENAL</a><a href="#fieldnotes">FIELD NOTES</a><a href="#projects">PROJECTS</a><a href="#credentials">CREDENTIALS</a>
+    </nav>
+    <a class="header-contact" href="#contact"><i></i> INITIATE CONTACT <span>↗</span></a>
+    <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav" hidden aria-label="Mobile navigation">
+    <a href="#about">01 / IDENTITY</a><a href="#expertise">02 / ARSENAL</a><a href="#fieldnotes">03 / FIELD NOTES</a><a href="#projects">04 / PROJECTS</a><a href="#credentials">05 / CREDENTIALS</a><a href="#contact">06 / CONTACT</a>
+  </nav>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-gridlines" aria-hidden="true"></div>
+      <div class="hero-orbit" aria-hidden="true"><span></span><span></span></div>
+      <div class="hero-kanji" aria-hidden="true">影</div>
+      <div class="hero-art" id="hero-art" aria-hidden="true"><div class="hero-art-halo"></div><img src="assets/arthur.jpg" alt="" fetchpriority="high"><div class="hero-art-fade"></div></div>
+      <div class="hero-inner container">
+        <div class="hero-main">
+          <p class="eyebrow hero-eyebrow"><span class="line"></span> THE OFFENSIVE SECURITY ARCHIVE <span class="hero-index">/ SE-001</span></p>
+          <p class="hero-pretitle">A presence within the machine.</p>
+          <h1 id="hero-title"><span>SHADOW</span><span>EVIL<b>.</b></span></h1>
+          <p class="hero-tagline">I don't just use systems.<br><em>I learn how they break.</em></p>
+          <div class="hero-bio">Luka Mgeladze <span>·</span> Offensive Security Student <span>·</span> Builder</div>
+          <div class="hero-actions">
+            <a class="primary-button" href="#projects"><span>EXPLORE THE WORK</span><span>↗</span></a>
+            <button type="button" class="ghost-button" id="awaken-toggle" aria-pressed="false"><span>◇</span><span id="awaken-text">AWAKEN THE SHADOW</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span>RECON // EXPLOIT // UNDERSTAND</span><a href="#about">SCROLL TO DESCEND <i></i></a><span>影の道 — THE SHADOW PATH</span></div>
+      <div class="hero-edge" aria-hidden="true"></div>
+    </section>
+
+    <section class="status-strip" aria-label="Current profile highlights"><div class="container status-grid">
+      <div class="status-item"><span class="status-key">CURRENT OBJECTIVE</span><strong>CPTS Exam <small>In preparation</small></strong></div>
+      <div class="status-item"><span class="status-key">HTB ACADEMY</span><strong>Learning Path <small>Completed</small></strong></div>
+      <div class="status-item"><span class="status-key">2026 HACKATHON</span><strong>Top 15 <small>Georgia</small></strong></div>
+      <div class="status-item"><span class="status-key">ACADEMIC FOCUS</span><strong>Cybersecurity <small>B.Sc. / 2027</small></strong></div>
+    </div></section>
+
+    <section class="section about" id="about" aria-labelledby="about-heading"><div class="container about-grid">
+      <div class="aside-label reveal"><span class="section-index">01 / IDENTITY</span><span class="vertical-jp" aria-hidden="true">闇の中に光あり</span><div class="moon-symbol" aria-hidden="true">☾</div></div>
+      <div class="about-copy reveal">
+        <p class="small-heading">WHO IS BEHIND THE ALIAS <span>◆</span> シャドウ・イーヴィル</p>
+        <h2 id="about-heading" class="display-heading">Curiosity is<br>my <em>weapon.</em></h2>
+        <p class="lead">I'm <strong>Luka Mgeladze</strong>, a cybersecurity student focused on offensive security, practical exploitation, and understanding systems from the inside out.</p>
+        <p class="muted-text">My work spans Active Directory attack paths, web application testing, privilege escalation, network enumeration, and low-level exploitation. I approach security as a craft: enumerate carefully, understand the underlying weakness, test it in authorized environments, and document what matters.</p>
+        <p class="muted-text">I have completed the Hack The Box Academy CPTS learning path and am preparing for the certification exam. Outside the labs, I build Python security tools and study C, memory internals, and software exploitation.</p>
+        <div class="identity-details"><div><small>ALIAS</small><strong>ShadowEvil</strong></div><div><small>DISCIPLINE</small><strong>Offensive Security</strong></div><div><small>APPROACH</small><strong>Methodology First</strong></div></div>
+      </div>
+      <div class="about-terminal reveal"><div class="terminal-head"><span class="terminal-dots"><i></i><i></i><i></i></span><span>shadowevil@operator:~</span><span>◇</span></div><div class="terminal-body">
+        <p><span class="prompt">shadowevil@lab</span>:~$ whoami</p><p class="terminal-answer">luka_mgeladze</p>
+        <p><span class="prompt">shadowevil@lab</span>:~$ cat focus.txt</p><p class="terminal-answer">offensive-security<br>active-directory<br>web-applications<br>binary-exploitation<br>security-automation</p>
+        <p><span class="prompt">shadowevil@lab</span>:~$ status --cpts</p><p class="terminal-answer"><span class="terminal-ok">[COMPLETE]</span> learning path<br><span class="terminal-warn">[ONGOING]</span> exam preparation</p>
+        <p><span class="prompt">shadowevil@lab</span>:~$ <span class="cursor"></span></p>
+      </div></div>
+    </div></section>
+
+    <section class="section arsenal" id="expertise" aria-labelledby="expertise-heading"><div class="container">
+      <div class="section-heading-row reveal"><div><p class="section-index">02 / THE ARSENAL</p><h2 id="expertise-heading" class="display-heading">Know the system.<br><em>Find the fracture.</em></h2></div><p class="section-intro">Core technical areas practiced through hands-on labs, coursework, and personal builds.</p></div>
+      <div class="expertise-grid">
+        <article class="expertise-card reveal"><div class="expertise-top"><span>01 / DOMAIN</span><span>侵入</span></div><div class="expertise-icon"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><circle cx="50" cy="50" r="29"/><circle cx="50" cy="50" r="10"/><path d="M50 5v35M50 60v35M5 50h35M60 50h35M17 17l24 24M59 59l24 24M83 17 59 41M41 59 17 83"/></svg></div><h3>Active Directory</h3><p>Attack-path analysis, Kerberoasting, ACL abuse, DCSync, pass-the-hash/ticket, credential abuse and lateral movement.</p><div class="tech-tags"><span>BloodHound</span><span>Impacket</span><span>PowerShell</span></div></article>
+        <article class="expertise-card reveal"><div class="expertise-top"><span>02 / APPLICATION</span><span>解析</span></div><div class="expertise-icon"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect x="13" y="20" width="74" height="59" rx="3"/><path d="M13 34h74M24 27h2M34 27h2M44 27h2M34 47l-12 12 12 12M66 47l12 12-12 12M59 43 43 75"/></svg></div><h3>Web Application Security</h3><p>HTTP request analysis, access-control testing, authentication testing and identifying vulnerable application behavior.</p><div class="tech-tags"><span>Burp Suite</span><span>sqlmap</span><span>HTTP</span></div></article>
+        <article class="expertise-card reveal"><div class="expertise-top"><span>03 / SYSTEM</span><span>深層</span></div><div class="expertise-icon"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect x="25" y="16" width="50" height="68"/><path d="M25 34h50M25 51h50M25 68h50M39 16v68M54 16v68M17 26h8M17 43h8M17 60h8M75 26h8M75 43h8M75 60h8"/></svg></div><h3>Systems & Exploitation</h3><p>Linux/Windows privilege escalation, stack memory, buffer overflows, return-address control and GDB debugging.</p><div class="tech-tags"><span>C</span><span>GDB</span><span>Linux</span></div></article>
+        <article class="expertise-card reveal"><div class="expertise-top"><span>04 / TOOLING</span><span>自動</span></div><div class="expertise-icon"><svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M39 19 15 50l24 31M61 19l24 31-24 31M58 11 41 89M10 50h15M75 50h15"/></svg></div><h3>Security Automation</h3><p>Python CLI tooling for network reconnaissance, HTTP session analysis and privilege-escalation enumeration.</p><div class="tech-tags"><span>Python</span><span>TCP/IP</span><span>CLI</span></div></article>
+      </div>
+      <div class="toolbelt reveal"><span>FIELD TOOLBELT /</span><div>Nmap <b>·</b> Burp Suite <b>·</b> Metasploit <b>·</b> BloodHound <b>·</b> Impacket <b>·</b> Wireshark <b>·</b> Netcat <b>·</b> sqlmap <b>·</b> GDB <b>·</b> ELK <b>·</b> Grafana</div></div>
+    </div></section>
+
+    <section class="section methodology" id="fieldnotes" aria-labelledby="fieldnotes-heading"><div class="container">
+      <div class="section-heading-row reveal"><div><p class="section-index">03 / FIELD NOTES</p><h2 id="fieldnotes-heading" class="display-heading">Beyond the <em>surface.</em></h2></div><p class="section-intro">Selected topics from my authorized training environments. These are areas of practice, not claims of production engagements.</p></div>
+      <div class="field-layout reveal"><div class="field-nav" role="tablist" aria-label="Field notes topics">
+        <button type="button" id="tab-ad" class="field-tab active" role="tab" aria-selected="true" aria-controls="panel-field" data-field="ad"><small>EXCERPT / 01</small><strong>Active Directory</strong><span>↗</span></button>
+        <button type="button" id="tab-web" class="field-tab" role="tab" aria-selected="false" aria-controls="panel-field" data-field="web" tabindex="-1"><small>EXCERPT / 02</small><strong>Web Testing</strong><span>↗</span></button>
+        <button type="button" id="tab-binary" class="field-tab" role="tab" aria-selected="false" aria-controls="panel-field" data-field="binary" tabindex="-1"><small>EXCERPT / 03</small><strong>Memory & Exploitation</strong><span>↗</span></button>
+        <button type="button" id="tab-ops" class="field-tab" role="tab" aria-selected="false" aria-controls="panel-field" data-field="ops" tabindex="-1"><small>EXCERPT / 04</small><strong>Operator Methodology</strong><span>↗</span></button>
+      </div><div class="field-panel" id="panel-field" role="tabpanel" aria-labelledby="tab-ad" tabindex="0"><div class="field-panel-top"><span id="field-label">[LAB RECORD 001]</span><span>AUTHORIZED ENVIRONMENTS ONLY</span></div><p class="field-overline" id="field-overline">DIRECTORY ATTACK PATHS</p><h3 id="field-title">One weak permission can change everything.</h3><p id="field-copy">I study how seemingly isolated directory misconfigurations can become connected attack paths, from enumeration and credential access to privilege escalation and domain compromise in labs.</p><div class="field-chips" id="field-chips"><span>Kerberoasting</span><span>ACL abuse</span><span>BloodHound</span><span>Pivoting</span></div><div class="field-footer"><span>SHADOWEVIL // NOTES</span><span id="field-count">01 / 04</span></div></div></div>
+    </div></section>
+
+    <section class="quote-band" aria-label="Personal philosophy"><div class="quote-ring" aria-hidden="true"></div><div class="container quote-content reveal"><p class="section-index">THE OPERATOR'S CREED / 狼</p><blockquote>“An exploit is temporary.<br><em>Understanding is permanent.</em>”</blockquote><p>SHADOWEVIL — THE ART OF ASKING WHY</p></div><span class="quote-kanji" aria-hidden="true">知</span></section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-heading"><div class="container">
+      <div class="section-heading-row reveal"><div><p class="section-index">04 / WORK IN THE OPEN</p><h2 id="projects-heading" class="display-heading">Built from <em>curiosity.</em></h2></div><p class="section-intro">Real software projects and active experiments. Repository links can be added as the work is published.</p></div>
+      <div class="project-filter reveal" role="group" aria-label="Filter projects"><button class="active" data-filter="all" aria-pressed="true">ALL WORK <span>04</span></button><button data-filter="tool" aria-pressed="false">SECURITY TOOLS <span>03</span></button><button data-filter="platform" aria-pressed="false">PLATFORMS <span>01</span></button></div>
+      <div class="project-list" id="project-list">
+        <article class="project-row reveal" data-category="tool"><div class="project-num">01 / TOOL</div><div><h3>Network Reconnaissance Tool <span>↗</span></h3><p>Multithreaded TCP port scanner with input validation, concurrent connections, timeouts and a command-line interface.</p><div class="project-stack"><span>Python</span><span>Networking</span><span>Threading</span></div></div><div class="project-state complete">BUILT</div></article>
+        <article class="project-row reveal" data-category="tool"><div class="project-num">02 / TOOL</div><div><h3>Authentication Testing Tool <span>↗</span></h3><p>Python HTTP authentication-testing utility for authorized environments, with session management and response analysis.</p><div class="project-stack"><span>Python</span><span>HTTP</span><span>Sessions</span></div></div><div class="project-state complete">BUILT</div></article>
+        <article class="project-row reveal" data-category="tool"><div class="project-num">03 / TOOL</div><div><h3>Privilege Escalation Toolkit <span>↗</span></h3><p>Modular Linux and Windows enumeration scripts aimed at reducing repetitive post-exploitation checks.</p><div class="project-stack"><span>Python</span><span>Linux</span><span>Windows</span></div></div><div class="project-state ongoing">IN PROGRESS</div></article>
+        <article class="project-row reveal" data-category="platform"><div class="project-num">04 / PLATFORM</div><div><h3>CYBER//ADAPT <span>↗</span></h3><p>Independent full-stack build of an adaptive cybersecurity learning experience: onboarding, skill assessment, lab simulations, learning roadmaps and behavior-based feedback.</p><div class="project-stack"><span>React</span><span>TypeScript</span><span>Learning Systems</span></div></div><div class="project-state complete">PROTOTYPE BUILT</div></article>
+      </div><p class="project-disclaimer reveal">* Project descriptions reflect completed prototypes or ongoing work; public repositories and writeups are not linked until supplied.</p>
+    </div></section>
+
+    <section class="section record" id="credentials" aria-labelledby="credentials-heading"><div class="container">
+      <div class="section-heading-row reveal"><div><p class="section-index">05 / PROOF OF WORK</p><h2 id="credentials-heading" class="display-heading">The path is<br><em>never finished.</em></h2></div><p class="section-intro">Education, hands-on learning, professional experience, and recognized milestones.</p></div>
+      <div class="record-grid"><div class="record-main reveal"><div class="record-heading"><span>TRAINING & CERTIFICATIONS</span><span>01—06</span></div>
+        <div class="credential"><span class="credential-mark">✧</span><div><h3>Hack The Box Academy — CPTS Path</h3><p>Penetration Tester learning path completed; preparing for the separate CPTS certification examination.</p></div><span class="credential-status pending">EXAM PENDING</span></div>
+        <div class="credential"><span class="credential-mark">✦</span><div><h3>Google Cybersecurity Professional Certificate</h3><p>2025</p></div><span class="credential-status">COMPLETED</span></div>
+        <div class="credential"><span class="credential-mark">✦</span><div><h3>TryHackMe — Junior Penetration Tester</h3><p>2025</p></div><span class="credential-status">COMPLETED</span></div>
+        <div class="credential"><span class="credential-mark">✦</span><div><h3>TCM Security — Python 101 for Hackers</h3><p>2026</p></div><span class="credential-status">COMPLETED</span></div>
+        <div class="credential"><span class="credential-mark">✦</span><div><h3>CyberEdu — Web Penetration Tester II</h3><p>2026</p></div><span class="credential-status">COMPLETED</span></div>
+        <div class="credential"><span class="credential-mark">✦</span><div><h3>Cisco — Networking Basics</h3><p>2026</p></div><span class="credential-status">COMPLETED</span></div>
+      </div>
+      <div class="record-side reveal"><div class="milestone-card"><span>ACADEMIC ROUTE</span><h3>Cybersecurity B.Sc.</h3><p>Caucasus University</p><div class="milestone-numbers"><strong>3.87</strong><span>GPA<br>Expected 2027</span></div></div><div class="milestone-card accent-card"><span>COMPETITION</span><h3>Top 15</h3><p>Cybersecurity Hackathon — Georgia, 2026</p><div class="milestone-footer">COMPETITIVE EXPERIENCE <span>↗</span></div></div><div class="milestone-card"><span>REAL-WORLD MONITORING</span><h3>Monitoring Specialist</h3><p>Nugios Technology — Part-time; system/application logs, anomaly detection, incident reporting.</p><div class="mini-tags"><span>ELK Stack</span><span>Grafana</span></div></div></div></div>
+    </div></section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-heading"><div class="container contact-inner reveal"><p class="section-index">06 / BEYOND THE VEIL</p><h2 id="contact-heading" class="contact-title">Have a problem<br><em>worth understanding?</em></h2><p>Interested in offensive security, research, practical labs and meaningful security engineering work.</p><div class="contact-actions"><button type="button" id="copy-alias" class="primary-button"><span id="copy-label">COPY @SHADOWEVIL</span><span>◇</span></button><a href="#top" class="contact-back">RETURN TO THE SURFACE ↑</a></div><div id="external-links" class="external-links" aria-label="Public profile links"></div><div class="contact-halo" aria-hidden="true"></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span>© <span id="year">2026</span> SHADOWEVIL // LUKA MGELADZE</span><a href="#top">影 <strong>SHADOWEVIL</strong></a><span>BUILT WITH INTENTION. TESTED WITH CURIOSITY.</span></div></footer>
+</body>
+</html>
